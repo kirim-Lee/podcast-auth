@@ -6,6 +6,7 @@ import { LoggedOut } from './logged-out-router';
 
 export default function App() {
   const isLoggin = useReactiveVar(isLoggedInVar);
+
   return (
     <ApolloProvider client={client}>
       <BrowserRouter>{isLoggin ? <LoggedIn /> : <LoggedOut />}</BrowserRouter>
