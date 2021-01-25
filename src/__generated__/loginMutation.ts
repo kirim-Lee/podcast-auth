@@ -8,7 +8,7 @@
 // ====================================================
 
 export interface loginMutation_login {
-  __typename: 'LoginOutput';
+  __typename: "LoginOutput";
   ok: boolean;
   error: string | null;
   token: string | null;
